@@ -31,6 +31,7 @@ $(document).ready(function () {
   });
 
   $('body').on('click', '.deleteButton', function () {
-    console.log('deleteButton clicked!');
+    $(this).parent().remove(); // it kinda worked
+    // $(this).remove();
   });
 });
