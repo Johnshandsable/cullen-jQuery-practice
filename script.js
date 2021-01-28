@@ -1,6 +1,4 @@
-$(document).ready(readyNow);
-
-function readyNow() {
+$(document).ready(function () {
   console.log('jQuery loaded');
 
   const $h1 = $('h1');
@@ -18,4 +16,4 @@ function readyNow() {
   // $('.froggy').css('background-color', 'blue');
 
   console.log('javascript loaded!');
-}
+});
