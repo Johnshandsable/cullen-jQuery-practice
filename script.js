@@ -19,7 +19,8 @@ $(document).ready(function () {
 
   let someRandVariable = 'as;ldfjkaslkdfj';
 
-  $('#js-formSubmit').on('click', function () {
+  $('#js-formSubmit').on('click', function (event) {
+    event.preventDefault();
     console.log('button clicked');
     $('#js-uselessList').append(`<li> 
     ${someRandVariable} - ${someRandVariable} - ${someRandVariable}
